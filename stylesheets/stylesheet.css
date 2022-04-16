@@ -1,0 +1,106 @@
+/* Colors
+#00eeff
+#00828b
+#252525
+#f8f8f8 */
+
+body{
+    margin: 0;
+}
+
+header {
+    display: none;
+}
+
+/* NavBar */
+nav{
+  justify-content: center;
+  position: fixed;
+  width: 60px;
+  top:0;
+  height: 100vh;
+  z-index: 100;
+  background-color: #252525;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: width .3s ease;
+  box-shadow: 4px 7px 10px rgba(0,0,0,.4);
+}
+@media screen and (min-width: 600px) {
+  nav{
+    width: 60px;
+  }
+}
+nav:hover {
+  width: 200px;
+}
+ul{
+  list-style-type: none;
+  color:#f8f8f8;
+  margin-left: -40px;
+}
+ul:first-child{
+  padding-top: 1.5rem;
+}
+li{
+  padding-bottom: .5rem;
+  font-family: 'roboto';
+  }
+  
+a{
+  position: relative;
+  display: block;
+  /* top: 15px; */
+  padding: 10px 0 10px 15px;
+  /* transition: all .3s ease; */
+  text-decoration: none;
+  color:#f8f8f8;
+  font-family: 'roboto';
+  font-weight: 100;
+  font-size: 1.35em;
+}
+a:hover{
+  background-color: #00828b;
+}
+
+/*Icons and other unique Navbar items*/
+.fa{
+    font-size: inherit;
+    margin-right: 20px;
+}
+
+.currentpage{
+  border-left: 5px solid #00eeff;
+}
+.otherpage{
+  
+}
+
+  /* Title Section of index.html */
+#titleSection{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+#titleSection > div{
+    position: absolute;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    margin-top: 35vh;
+}
+#titleSection > div > h1{
+    font-size: 3em;
+}
+
+/* Gallery*/
+.galleryTable{
+  border-collapse: collapse;
+  background-color: red;
+}
+td > img{
+  height: 33.33vh;
+  width: 33.33vw;
+  object-fit: cover;
+  float: left;
+}
