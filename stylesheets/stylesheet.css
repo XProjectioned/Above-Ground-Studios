@@ -4,6 +4,11 @@
 #252525
 #f8f8f8 */
 
+@font-face {
+  font-family: Antro Vectra;
+  src: url(../assets/fonts/antro-vectra.bolder.otf);
+}
+
 body{
     margin: 0;
 }
@@ -16,7 +21,7 @@ header {
 nav{
   justify-content: center;
   position: fixed;
-  width: 60px;
+  width: 65px;
   top:0;
   height: 100vh;
   z-index: 100;
@@ -28,7 +33,7 @@ nav{
 }
 @media screen and (min-width: 600px) {
   nav{
-    width: 60px;
+    width: 65px;
   }
 }
 nav:hover {
@@ -38,9 +43,7 @@ ul{
   list-style-type: none;
   color:#f8f8f8;
   margin-left: -40px;
-}
-ul:first-child{
-  padding-top: 1.5rem;
+  margin-top: 50px;
 }
 li{
   padding-bottom: .5rem;
@@ -51,7 +54,7 @@ a{
   position: relative;
   display: block;
   /* top: 15px; */
-  padding: 10px 0 10px 15px;
+  padding: 10px 0 10px 20px;
   /* transition: all .3s ease; */
   text-decoration: none;
   color:#f8f8f8;
@@ -59,8 +62,32 @@ a{
   font-weight: 100;
   font-size: 1.35em;
 }
-a:hover{
+a:hover:not(#logoLink){
   background-color: #00828b;
+}
+
+/*Nav text change on hover*/
+#logoLink{
+  transition: all .3s ease;
+  font-family: Antro Vectra;
+  font-size: 16px;
+  text-align: center;
+  top: 20px;
+  letter-spacing: -2px;
+  margin-left: -10px;
+}
+#hide{
+  display: inline-block;
+  max-width: 0;
+  opacity: 0;
+  transition: all .3s ease;
+  transition-delay: .2s;
+}
+nav:hover > a > #hide{
+  max-width: 200px;
+  opacity: 1;
+  letter-spacing: 0px;
+  margin-left: 0px;
 }
 
 /*Icons and other unique Navbar items*/
