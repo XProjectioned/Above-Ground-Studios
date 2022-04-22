@@ -123,7 +123,7 @@ nav:hover > a > #hide{
     font-size: 3em;
 }
 
-/* Gallery*/
+/* Gallery */
 .galleryTable{
   border-collapse: collapse;
   background-color: red;
@@ -133,4 +133,53 @@ td > img{
   width: 33.33vw;
   object-fit: cover;
   float: left;
+}
+
+/* Services */
+#servicesSection{
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  text-align: center;
+  gap: 13.3vw;
+  margin: 0 0 0 65px;
+  padding: 0;
+}
+#servicesSection > div{
+  width: 20vw;
+  margin-top: 40vh;
+  color: #f8f8f8;
+  background-color: #252525;
+  box-shadow: 4px 7px 10px rgba(0,0,0,.4);
+}
+#servicesSection > div > h1{
+  font-family: Antro Vectra;
+}
+#servicesBackground{
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  padding: 0px;
+  width: 100vw;
+  overflow: hidden;
+}
+#servicesBackground > div{
+  width: 33.33vw;
+  height: 100vh;
+  float: left;
+}
+#servicesBackgroundImage1{
+  background-image: url(../assets/images/construcionBuilding.jpg);
+  filter: grayscale(100%);
+  background-position: center bottom;
+}
+#servicesBackgroundImage2{
+  background-image: url(../assets/images/test.png);
+  filter: grayscale(100%);
+  background-position: center bottom;
+}
+#servicesBackgroundImage3{
+  background-image: url(../assets/images/test.png);
+  filter: grayscale(100%);
+  background-position: center bottom;
 }
