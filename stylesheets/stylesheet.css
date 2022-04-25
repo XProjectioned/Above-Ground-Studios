@@ -99,9 +99,6 @@ nav:hover > a > #hide{
 .currentpage{
   border-left: 5px solid #00eeff;
 }
-.otherpage{
-  
-}
 #logoLink{
   padding-left: 10px;
 }
@@ -139,47 +136,67 @@ td > img{
 #servicesSection{
   display: grid;
   grid-auto-flow: column;
-  justify-content: center;
-  text-align: center;
-  gap: 13.3vw;
-  margin: 0 0 0 65px;
-  padding: 0;
-}
-#servicesSection > div{
-  width: 20vw;
-  margin-top: 40vh;
-  color: #f8f8f8;
-  background-color: #252525;
-  box-shadow: 4px 7px 10px rgba(0,0,0,.4);
-}
-#servicesSection > div > h1{
-  font-family: Antro Vectra;
-}
-#servicesBackground{
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  padding: 0px;
   width: 100vw;
   overflow: hidden;
+  text-align: center;
+  gap: 0;
+  left: 65px;
+  padding: 0;
 }
-#servicesBackground > div{
-  width: 33.33vw;
-  height: 100vh;
-  float: left;
-}
-#servicesBackgroundImage1{
+#servicesBackground1{
   background-image: url(../assets/images/construcionBuilding.jpg);
+  background-size: 250%;
+  width: 33.34vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
   filter: grayscale(100%);
-  background-position: center bottom;
 }
-#servicesBackgroundImage2{
+#servicesBackground2{
   background-image: url(../assets/images/test.png);
-  filter: grayscale(100%);
-  background-position: center bottom;
+  background-size: 300%;
+  width: 33.34vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-#servicesBackgroundImage3{
+#servicesBackground3{
   background-image: url(../assets/images/test.png);
-  filter: grayscale(100%);
-  background-position: center bottom;
+  background-size: 300%;
+  width: 33.34vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.servicesMenu{
+  display: inline-block;
+  width: 20vw;
+  margin: 40vh 0 0 0;
+  padding: 10px 0 10px 0;
+  background-color: #252525;
+  color: #f8f8f8;
+  box-shadow: 4px 7px 10px rgba(0,0,0,.4);
+}
+.servicesMenu > h1{
+  font-family: Antro Vectra;
+}
+/* Services Animations*/
+.servicesAnimation{
+  transition: all 1s ease-in-out;
+}
+#servicesBackground1:hover{
+  background-size: 300%;
+}
+#servicesBackground2:hover{
+  background-size: 350%;
+}
+#servicesBackground3:hover{
+  background-size: 350%;
+}
+
+.servicesMenuAnimation{
+  transition: all 1s ease-in-out;
+}
+.servicesAnimation:hover > .servicesMenu{
+  margin-top: 10vh;
 }
