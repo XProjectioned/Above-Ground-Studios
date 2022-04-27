@@ -180,9 +180,15 @@ td > img{
 .servicesMenu > h1{
   font-family: Antro Vectra;
 }
+.servicesDropDown{
+  padding: 10px 25px 10px 25px;
+  overflow: hidden;
+  height: 0;
+}
+
 /* Services Animations*/
 .servicesAnimation{
-  transition: all 1s ease-in-out;
+  transition: all 1.5s ease-in-out;
 }
 #servicesBackground1:hover{
   background-size: 300%;
@@ -195,8 +201,21 @@ td > img{
 }
 
 .servicesMenuAnimation{
-  transition: all 1s ease-in-out;
+  transition: all .75s ease-in-out;
+  transition-delay: .75s;
 }
 .servicesAnimation:hover > .servicesMenu{
   margin-top: 10vh;
+  transition-delay: 0s;
+}
+
+.servicesDropDown{
+  transition: height .75s ease-in-out;
+  transition-delay: .75s initial;
+  transition-delay: 0s;
+}
+.servicesAnimation:hover > div > .servicesDropDown{
+  color: #f8f8f8;
+  height: 300px;
+  transition-delay: .75s;
 }
