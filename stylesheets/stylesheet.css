@@ -206,7 +206,7 @@ td > img{
 }
 .servicesAnimation:hover > .servicesMenu{
   margin-top: 10vh;
-  transition-delay: 0s;
+  transition-delay: .1s; /* Initial delay - so when moving the cursor past it, it won't initiate the animation - Quility of life*/
 }
 
 .servicesDropDown{
