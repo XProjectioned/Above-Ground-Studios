@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/1fdf9819b4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../stylesheets/stylesheet.css">
     <title>Senior Gallery - Above Ground Studios</title>
 </head>
 <body>
     <header>Above Ground Studios</header>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn">
+        <span class="navicon"></span>
+    </label>
     <nav>
         <a href="../index.html" id="logoLink">
             A<span id="hide">bove</span>
@@ -17,43 +20,47 @@
             S<span id="hide">tudios</span>
         </a>
         <ul>
-            <li>
-                <a href="./services.html" class="currentpage">
-                    <i class="fa fa-wrench"></i>
-                    <span>Services</span>
-                </a>
-            </li>
             <li id="dropDown">
                 <a href="#">
-                    <i class="fa fa-regular fa-images"></i>
-                    <span>Galleries</span>
+                    <img src="../assets/icons/wrench_icon.png" alt="" class="icon">
+                    <span>Services</span>
+                </a>
+                <a href="./seniorservice.html" id="hideDropDown">
+                    <span>Seniors</span>
                  </a>
-                 <a href="./seniorgallery.html" id="hideDropDown">
+            </li>
+            <li id="dropDown">
+                <a href="#" class="currentpage">
+                    <img src="../assets/icons/photo_gallery2_icon.png" alt="" class="icon">
+                    <span>Galleries
+                    </span>
+                 </a>
+                 <a href="./seniorgallery.html" id="hideDropDown" class="currentpage">
                     <span>Senior Gallery</span>
                  </a>
             </li>
             <li>
                 <a href="./about.html">
-                    <i class="fa fa-regular fa-address-card"></i>
+                    <img src="../assets/icons/identification_icon.png" alt="" class="icon">
                     <span>About Me</span>
+                </a>
+            </li>
+            <li>
+                <a href="./contact.html">
+                    <img src="../assets/icons/email-open_icon.png" alt="" class="icon">
+                    <span>Contact Me</span>
                 </a>
             </li>
         </ul>
     </nav>
     <main>
         <div id="gallery">
-            <div>
-                <img src="../assets/images/DSC04692.jpg" alt="">
-            </div>
-            <div>
-                <img src="../assets/images/DSC04894.jpg" alt="">
-            </div>
-            <div>
-                <img src="../assets/images/test.png" alt="">
-            </div>
-            <div>
-                <img src="../assets/images/test.png" alt="">
-            </div>
+            <!-- <img src="../assets/images/DSC04706.jpg" alt="" class="galleryImg"> -->
+            <img src="../assets/images/DSC04686.jpg" alt="" class="galleryImg">
+            <img src="../assets/images/DSC04727.jpg" alt="" class="galleryImg">
+            <img src="../assets/images/DSC04894.jpg" alt="" class="galleryImg">
+            <img src="../assets/images/DSC04902.jpg" alt="" class="galleryImg">
+            <img src="../assets/images/DSC05219.jpg"
         </div>
     </main>
     <footer></footer>

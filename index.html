@@ -9,6 +9,10 @@
 </head>
 <body>
     <header>Above Ground Studios</header>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn">
+        <span class="navicon"></span>
+    </label>
     <nav>
         <a href="../index.html" id="logoLink">
             A<span id="hide">bove</span>
@@ -17,10 +21,9 @@
         </a>
         <ul>
             <li id="dropDown">
-                <a href="#" class="currentpage">
+                <a href="#">
                     <img src="./assets/icons/wrench_icon.png" alt="" class="icon">
-                    <span>Services
-                    </span>
+                    <span>SERVICES</span>
                 </a>
                 <a href="html/seniorservice.html" id="hideDropDown">
                     <span>Seniors</span>
@@ -57,14 +60,49 @@
                 <p>Lorem ipsum dolor sit amet</p>
             </div>
         </section>
-        <section id="titleSection_Services">
+        <section class="sectionPreset_itemTable">
+            <div>
+                <h1>Services</h1>
+                <div class="sectionPreset_itemTable_flexContainer">
+                    <a href="./html/seniorservice.html">
+                        <span>Seniors</span>
+                        <img src="./assets/images/DSC05219.jpg" alt="">
+                    </a>
+                    <a>
+                        <span>Family</span>
+                        <img src="./assets/images/test.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="sectionPreset3">
+            <div>
+                <h1>IT'S ABOUT WHO?</h1>
+                <p><span>You!</span>That's right, I'm talking about you! From start to finish, your experience with me is all about celebrating your unique vision. What do you envision for your pictures? What elements do you want to include? And equally important, what do you want to avoid? We're in this together, and I want to make sure we capture exactly what you're looking for.</p>
+            </div>
+        </section>
+        <section class="sectionPreset_itemTable">
+            <div>
+                <h1>Galleries</h1>
+                <div class="sectionPreset_itemTable_flexContainer">
+                    <a href="./html/seniorgallery.html">
+                        <span>Seniors</span>
+                        <img src="./assets/images/DSC05219.jpg" alt="">
+                    </a>
+                    <a>
+                        <span>Family</span>
+                        <img src="./assets/images/test.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="titleSection_Services">
             <a href="html/seniorservice.html" id="titleSection_Services_Senior">
                 <h2>Seniors</h2>
             </a>
             <a></a>
             <a></a>
-            <a></a>
-        </section>
+        </section> -->
         <!-- <section>
             <div class="fadeSlideShow">
                 <div class="pic" id="pic6">
@@ -76,6 +114,55 @@
             </div>
         </section> -->
     </main>
-    <footer></footer>
+    <footer>
+        <div>
+            <div id="footerDivider"></div>
+            <div id="footerContainer">
+                <div id="footerContainer_title">
+                    <h1>Above Ground Studios</h1>
+                    <p>Lorem Ipsum</p>
+                </div>
+                <div id="footerContainer_pages">
+                    <h2>Pages</h2>
+                    <ul>
+                        <li>
+                            <a href="">Services</a>
+                        </li>
+                        <li>
+                            <a href="">Galleries</a>
+                        </li>
+                        <li>
+                            <a href="">About Me</a>
+                        </li>
+                        <li>
+                            <a href="">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="footerContainer_contact">
+                    <h2>Contact Info</h2>
+                    <ul>
+                        <li>
+                            <span>715-226-1986</span>
+                        </li>
+                        <li>
+                            <!-- <span>Email</span> -->
+                            <a href="mailto:abovegroundstudiosphotography@gmail.com" id="footerContainer_emailLink">Email</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/shaun_cfjf/" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/icons/instagram_icon.png" alt="" id="">
+                                <!-- <p>INSTAGRAM ID</p> -->
+                            </a>
+                            <a>
+                                <img src="./assets/icons/facebook_icon.png" alt="" id="">
+                                <!-- <p>FACEBOOK ID</p> -->
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
