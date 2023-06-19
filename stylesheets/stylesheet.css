@@ -83,6 +83,10 @@ footer > div{
 #footerContainer_title > h1{
 margin-top: 0;
 }
+#footerContainer_title > p{
+  font-size: 1rem;
+  color: var(--themeColor3);
+}
 #footerContainer_pages{
   flex: 1;
   margin-right: 1em;
@@ -102,16 +106,16 @@ margin-top: 0;
   text-decoration: none;
   color: var(--themeColor3);
   font-family: Lemon Milk Regular;
-  font-size: 1em;
+  font-size: 1rem;
 }
 #footerContainer_contact{
   flex: 1;
-  margin-right: 1em;
+  margin-right: 1rem;
 }
 #footerContainer_contact > h2{
   color: var(--themeColor2);
   font-family: Lemon Milk Regular;
-  font-size: 1em;
+  font-size: 1rem;
   margin-top: 0;
 }
 #footerContainer_contact > ul{
@@ -123,8 +127,8 @@ margin-top: 0;
   text-decoration: none;
   color: var(--themeColor3);
   font-family: Lemon Milk Regular;
-  font-size: 1em;
-  margin-top: .5em;
+  font-size: 1rem;
+  margin-top: .5rem;
   height: 30px;
   width: 30px;
 }
@@ -143,7 +147,7 @@ margin-top: 0;
   text-decoration: none;
   color: var(--themeColor3);
   font-family: Lemon Milk Regular;
-  font-size: 1rem;
+  font-size: .5rem;
 }
 @media screen and (max-width: 480px){
   #footerContainer{
@@ -218,6 +222,40 @@ nav > a{
 a:hover:not(#logoLink, #seniorSectionContactButton, .button_contact){
   background-color: #00828b;
 }
+#nav_socials{
+  height: 100%;
+}
+#nav_socials > li{
+  
+}
+#nav_socials > li > a{
+  width: 30px;
+  padding: 0;
+  margin-left: 20px;
+  transition: transform .15s ease-in-out;
+  position: absolute;
+  bottom: 1rem;
+  
+}
+#nav_socials > li > a:hover{
+  background-color: transparent;
+  transform: scale(1.15);
+}
+@media screen and (max-width: 768px) {
+  
+}
+/* nav > div{
+  display: flex;
+  position: absolute;
+  margin-top: auto;
+  bottom: 1rem;
+}
+nav > div > a{
+  position: relative;
+  display: block;
+  margin-left: 20px;
+  width: 30px;
+} */
 
 /* Hamburger menu */
 .menu-icon {
@@ -292,6 +330,15 @@ a:hover:not(#logoLink, #seniorSectionContactButton, .button_contact){
   opacity: 1;
   letter-spacing: 0px;
   margin-left: 0px;
+}
+.menu-btn:checked ~ nav > #nav_socials{
+  transition-delay: .15s;
+}
+@media screen and (max-width: 768px){
+  .menu-btn:not(:checked) ~ nav > #nav_socials{
+    transition-delay: 0s;
+    opacity: 0;
+  }
 }
 @media screen and (min-width: 769px){
   .menu-btn, .menu-icon{
@@ -382,9 +429,6 @@ nav:hover > a > #hide{
     text-align: center;
     /* padding-top: 20px; */
   }
-  #nav_dropdown_containter{
-    display: block;
-  }
   #hide{
     transition-delay: 0s;
   }
@@ -394,25 +438,34 @@ nav:hover > a > #hide{
 #titleSection{
   background-image: url(../assets/images/TitleSectionBackground.jpg);
   background-size: cover;
+  background-attachment: fixed;
   position: relative;
   width: 100%;
   height: 100vh;
-}
-#titleSection > #title{
-  position: absolute;
   text-align: center;
-  height: auto;
-  width: 100%;
-  margin-top: 35vh;
-  color: var(--themeColor2);;
+}
+#titleSection > div{
+  /* text-align: center; */
+  margin-left: var(--navCorrection);
+}
+#titleSection > div > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#titleSection > div > div > img{
+  max-height: 30rem;
 }
 #titleSection > div > h1{
-  padding-left: var(--navCorrection);
   font-size: 3em;
   font-family: Antro Vectra;
+  color: var(--themeColor2);
+  margin-top: 0;
+  padding-top: 35vh;
 }
 #titleSection > div > p{
-  padding-left: var(--navCorrection);
+  font-family: Lemon Milk Pro Light;
+  color: var(--themeColor2);
 }
 
 /* Section Preset Item Table */
@@ -435,6 +488,8 @@ nav:hover > a > #hide{
   padding-left: 5rem;
   padding-right: 5rem;
   gap: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 .sectionPreset_itemTable_flexContainer > a{
   flex: 1;
@@ -664,7 +719,7 @@ nav:hover > a > #hide{
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 3%;
+  gap: 1rem;
 }
 #seniorSection_gallery_img > img{
   width: 31%;
@@ -764,33 +819,37 @@ nav:hover > a > #hide{
 
 /* Gallery */
 #gallery{
-  display:inline-block;
-  margin-right: 10px;    
+  display: block;
+  margin-right: 1rem;    
   margin-left: calc(var(--navCorrection) + 10px);
-  margin-top: 10px;
+  margin-top: 1rem;
   line-height: 0;       
   -webkit-column-count: 3;    
-  -webkit-column-gap: 10px;    
+  -webkit-column-gap: 1rem;    
   -moz-column-count: 3;
-  -moz-column-gap: 10px;
+  -moz-column-gap: 1rem;
   column-count: 3;    
-  column-gap: 10px;
+  column-gap: 1rem;
 }
-#gallery > img{
+#gallery > div > h1{
+    color: var(--themeColor2);
+    font-family: Lemon Milk Regular;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2rem;
+}
+#gallery > div > img{
   width: 100% !important;    
   height: auto !important;  
-  padding: 0 0 10px 0;
+  padding: 0 0 1rem 0;
 }
-@media (max-width: 480px){
+@media (max-width: 768px){
   #gallery{
     margin-top: 75px;
-    margin-left: 10px;
-    -webkit-column-count: 2;    
-    -webkit-column-gap: 10px;    
+    margin-left: 1rem;
+    -webkit-column-count: 2;
     -moz-column-count: 2;
-    -moz-column-gap: 10px;
-    column-count: 2;    
-    column-gap: 10px;
+    column-count: 2;
   }
 }
 
@@ -909,7 +968,6 @@ nav:hover > a > #hide{
   background-color: #10101070;
   padding: 3rem;
   text-align: left;
-  width: 100%;
   max-width: 400px;
 }
 #formHolder > div > form > div{
