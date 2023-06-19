@@ -1,0 +1,15 @@
+# mod_rewrite starts here (rewrites the file extension in the address bar)
+
+RewriteEngine on
+
+#  does not apple to existing directores
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# check for file in directory with .html extension
+
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+# .html page shown
+
+RewriteRule ^(.*)$ $1.html [NC,L]
