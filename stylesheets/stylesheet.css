@@ -467,6 +467,9 @@ nav:hover > a > #hide{
   font-family: Lemon Milk Pro Light;
   color: var(--themeColor2);
 }
+#titleSection > div > p > span{
+  text-transform: uppercase;
+}
 
 /* Section Preset Item Table */
 .sectionPreset_itemTable{
