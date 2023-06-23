@@ -1076,7 +1076,7 @@ nav:hover > a > #hide{
   margin-left: var(--navCorrection);
 }
 #formSubmitted > div > div{
-  width: auto;
+  width: 100vw;
   padding: 2rem;;
   margin-left: auto;
   margin-right: auto;
