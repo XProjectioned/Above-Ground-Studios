@@ -469,6 +469,7 @@ nav:hover > a > #hide{
 }
 #titleSection > div > p > span{
   text-transform: uppercase;
+  text-decoration: underline var(--accentColor1);
 }
 
 /* Section Preset Item Table */
