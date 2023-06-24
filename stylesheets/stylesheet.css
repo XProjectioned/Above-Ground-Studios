@@ -259,6 +259,9 @@ nav > div > a{
   position: fixed;
   top: 0px;
   left: 0px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 .menu-icon .navicon {
@@ -462,6 +465,7 @@ nav:hover > a > .hide {
 }
 #titleSection > div > p > span {
   text-transform: uppercase;
+  -webkit-text-decoration: underline var(--accentColor1);
   text-decoration: underline var(--accentColor1);
 }
 
@@ -517,6 +521,7 @@ nav:hover > a > .hide {
 .sectionPreset_itemTable_flexContainer > a > img {
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
 }
@@ -552,6 +557,7 @@ nav:hover > a > .hide {
 }
 .sectionPreset3 > div > p > span {
   padding-right: 0.25em;
+  -webkit-text-decoration: underline #00eeff;
   text-decoration: underline #00eeff;
   font-family: Lemon Milk Regular;
   font-size: 1.75em;
@@ -710,6 +716,7 @@ nav:hover > a > .hide {
 }
 #seniorSection_gallery_img > img {
   width: 31%;
+  -o-object-fit: cover;
   object-fit: cover;
   flex: 1;
   padding: 0;
@@ -833,7 +840,6 @@ nav:hover > a > .hide {
   #gallery {
     margin-top: 75px;
     margin-left: 1rem;
-    -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
   }
@@ -857,6 +863,7 @@ nav:hover > a > .hide {
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 #servicesBackground2 {
@@ -1112,6 +1119,7 @@ select:focus {
     </div> */
 .fadeSlideShow {
   position: relative;
+  -o-object-fit: cover;
   object-fit: cover;
   overflow: hidden;
   height: 100vh;
@@ -1127,31 +1135,37 @@ select:focus {
 #pic1 {
   background-color: var(--themeColor2);
   z-index: 6;
+  -webkit-animation-delay: 0s;
   animation-delay: 0s;
 }
 #pic2 {
   background-color: var(--themeColor2);
   z-index: 5;
+  -webkit-animation-delay: 5s;
   animation-delay: 5s;
 }
 #pic3 {
   background-color: var(--themeColor2);
   z-index: 4;
+  -webkit-animation-delay: 10s;
   animation-delay: 10s;
 }
 #pic4 {
   background-color: var(--themeColor2);
   z-index: 3;
+  -webkit-animation-delay: 15s;
   animation-delay: 15s;
 }
 #pic5 {
   background-color: var(--themeColor2);
   z-index: 2;
+  -webkit-animation-delay: 20s;
   animation-delay: 20s;
 }
 #pic6 {
   background-color: var(--themeColor2);
   z-index: 1;
+  -webkit-animation-delay: 25s;
   animation-delay: 25s;
 }
 @-webkit-keyframes fade {
