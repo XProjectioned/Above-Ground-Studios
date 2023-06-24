@@ -465,8 +465,8 @@ nav:hover > a > .hide {
 }
 #titleSection > div > p > span {
   text-transform: uppercase;
-  -webkit-text-decoration: underline var(--accentColor1);
-  text-decoration: underline var(--accentColor1);
+  -webkit-text-decoration: underline #00eeff;
+  text-decoration: underline #00eeff;
 }
 
 /* Section Preset Item Table */
