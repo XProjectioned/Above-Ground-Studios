@@ -325,7 +325,7 @@ nav > div > a{
 .menu-btn:checked ~ nav{
   height: 100vh;
 }
-.menu-btn:checked ~ nav > a > #hide{
+.menu-btn:checked ~ nav > a > .hide{
   max-width: 200px;
   opacity: 1;
   letter-spacing: 0px;
@@ -357,7 +357,7 @@ nav > div > a{
   letter-spacing: -2px;
   margin-left: -10px;
 }
-#hide{
+.hide{
   display: inline-block;
   max-width: 0;
   opacity: 0;
@@ -365,7 +365,7 @@ nav > div > a{
   transition-property: max-width, opacity, letter-spacing, margin-left;
   transition-delay: .2s;
 }
-nav:hover > a > #hide{
+nav:hover > a > .hide{
   max-width: 200px;
   opacity: 1;
   letter-spacing: 0px;
@@ -373,7 +373,7 @@ nav:hover > a > #hide{
 }
 
 /*Navbar Drop-Down menu*/
-#hideDropDown{
+.hideDropDown{
   max-height: 0;
   margin: 0;
   padding: 0 0 0 20px;
@@ -381,7 +381,7 @@ nav:hover > a > #hide{
   transition: .3s ease;
   transition-property: display, max-height, opacity, letter-spacing, margin-left, padding;
 }
-#dropDown:hover > #hideDropDown{
+.dropDown:hover > .hideDropDown{
   display: block;
   max-height: 44.5px;
   opacity: 1;
@@ -429,7 +429,7 @@ nav:hover > a > #hide{
     text-align: center;
     /* padding-top: 20px; */
   }
-  #hide{
+  .hide{
     transition-delay: 0s;
   }
 }
