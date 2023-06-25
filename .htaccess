@@ -13,3 +13,8 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 # .html page shown
 
 RewriteRule ^(.*)$ $1.html [NC,L]
+
+# 301 redirect http to https
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://example.com/$1 [L,R=301]
