@@ -17,4 +17,4 @@ RewriteRule ^(.*)$ $1.html [NC,L]
 # 301 redirect http to https
 RewriteEngine On
 RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://example.com/$1 [L,R=301]
+RewriteRule ^(.*)$ https://abovegroundstudiosphotography.com/$1 [L,R=301]
