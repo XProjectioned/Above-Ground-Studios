@@ -684,6 +684,9 @@ nav:hover > a > .hide {
     margin-right: auto;
     float: none;
   }
+  #sectionPreset1_TitleRight_img {
+    padding-bottom: 2rem;
+  }
 }
 
 /* Senior Section Gallery */
