@@ -70,7 +70,7 @@ footer > div {
   padding-left: 1em;
   padding-right: 1em;
   margin-top: 3rem;
-  margin-bottom: 3em;
+  padding-bottom: 3em;
 }
 #footerContainer_title {
   flex: 2;
