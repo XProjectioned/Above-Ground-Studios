@@ -621,6 +621,10 @@ nav:hover > a > .hide {
   margin-right: 1.5rem;
   margin-left: calc(var(--navCorrection) + 35px);
 }
+.sectionPreset1_TitleLeft > p > span {
+  -webkit-text-decoration: underline #00eeff;
+  text-decoration: underline #00eeff;
+}
 .sectionPreset1_TitleRight {
   height: 100%;
   width: 50vw;
