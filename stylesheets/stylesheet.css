@@ -621,9 +621,12 @@ nav:hover > a > .hide {
   margin-right: 1.5rem;
   margin-left: calc(var(--navCorrection) + 35px);
 }
-.sectionPreset1_TitleLeft > p > span {
+#sectionPreset1_TitleLeft_paragraph_spanName {
   -webkit-text-decoration: underline #00eeff;
   text-decoration: underline #00eeff;
+}
+#sectionPreset1_TitleLeft_paragraph_spanSerendipitous {
+  font-style: italic;
 }
 .sectionPreset1_TitleRight {
   height: 100%;
