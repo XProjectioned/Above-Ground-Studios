@@ -217,7 +217,12 @@ nav > a {
   font-size: 1rem;
   align-items: center;
 }
-a:hover:not(#logoLink, #seniorSectionContactButton, .button_contact) {
+a:hover:not(
+    #logoLink,
+    #seniorSectionContactButton,
+    .button_contact,
+    .sectionPreset_itemTable_flexContainer > a
+  ) {
   background-color: #00828b;
 }
 #nav_socials {
