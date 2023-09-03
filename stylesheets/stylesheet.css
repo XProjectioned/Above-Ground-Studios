@@ -781,8 +781,16 @@ nav:hover > a > .hide {
   margin-right: auto;
   color: var(--themeColor2);
 }
+#seniorSection_pricing_text > p {
+  color: var(--themeColor3);
+  font-size: 0.75rem;
+  font-family: Lemon Milk Pro light;
+  margin-bottom: 0;
+}
 #seniorSection_pricing_text > div {
   display: inline-block;
+  vertical-align: top;
+  width: 32.8%;
 }
 #seniorSection_pricing_text > div > h1 {
   font-family: Lemon Milk Regular;

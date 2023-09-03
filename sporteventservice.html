@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./stylesheets/stylesheet.css" />
     <link rel="icon" href="./assets/icons/favicon.png" />
-    <title>About Me - Above Ground Studios Photography</title>
+    <title>Sport Events - Above Ground Studios Photography</title>
   </head>
   <body>
     <header>Above Ground Studios</header>
@@ -23,11 +23,11 @@
       </a>
       <ul>
         <li class="dropDown">
-          <a>
+          <a class="currentpage">
             <img src="./assets/icons/wrench_icon.png" alt="" class="icon" />
             <span>Services </span>
           </a>
-          <a href="seniorservice" class="hideDropDown">
+          <a href="seniorservice" class="hideDropDown" class="currentpage">
             <span>Seniors</span>
           </a>
         </li>
@@ -45,7 +45,7 @@
           </a>
         </li>
         <li>
-          <a href="about" class="currentpage">
+          <a href="about">
             <img
               src="./assets/icons/identification_icon.png"
               alt=""
@@ -55,12 +55,8 @@
           </a>
         </li>
         <li>
-          <a href="./contact">
-            <img
-              src="../assets/icons/email-open_icon.png"
-              alt=""
-              class="icon"
-            />
+          <a href="contact">
+            <img src="./assets/icons/email-open_icon.png" alt="" class="icon" />
             <span>Contact Me</span>
           </a>
         </li>
@@ -85,47 +81,76 @@
     <main>
       <section class="sectionPreset1">
         <div class="sectionPreset1_TitleLeft">
-          <h1>About Me</h1>
+          <h1>Sport Events</h1>
+          <p>// INSERT TEXT</p>
           <p>
-            Hi! Im
-            <span id="sectionPreset1_TitleLeft_paragraph_spanName"
-              >Shaun Cooper</span
-            >! Photography entered my life as a serendipitous
-            <span id="sectionPreset1_TitleLeft_paragraph_spanSerendipitous"
-              >(I don't know what this word means, it looked cool in the
-              thesaurus)</span
-            >
-            discovery, captivating me with its ability to freeze a moment in
-            time and convey emotions through visuals alone. What began as a
-            casual exploration quickly evolved into a passionate pursuit, as I
-            realized the unique power of a single frame to tell a story and
-            evoke profound emotions.
+            You've got a sports team? I've got a camera. Let's make it happen!
+            Book your session today!
           </p>
+          <!-- <a href="./contact" id="seniorSectionContactButton">
+                    <span>Contact Me</span>
+                </a> -->
         </div>
-        <div class="sectionPreset1_TitleRight">
-          <img
-            src="./assets/images/me_with_pizza.jpg"
-            alt=""
-            id="sectionPreset1_TitleRight_img"
-          />
+        <div class="sectionPreset1_TitleRight hideWhileTablet">
+          <img src="./assets/images/ags_assets-DSC03771.jpg" alt="" />
         </div>
       </section>
-      <section class="sectionPreset1" id="about_section2">
-        <div class="sectionPreset1_TitleLeft">
-          <h1>College</h1>
-          <p>
-            I am currently in my second year of college at UW-Stout over in
-            Menomonie. When I first started over there at Stout, I was a
-            Computer & Electrical Engineer. During my first semester I quickly
-            realized that I was in the wrong major. I was researching other
-            majors I could go into and came across Video Production. I already
-            like photography so why not video? I switched over to Video
-            Production the next semester. Probably one of the best decisions
-            I’ve ever made.
-          </p>
+      <section id="seniorSection_gallery">
+        <div>
+          <div>
+            <h1>CHECK OUT THE GALLERY!</h1>
+          </div>
+          <div id="seniorSection_gallery_img">
+            <img src="./assets/images/ags_assets-DSC03771.jpg" alt="" />
+            <img src="./assets/images/ags_assets-DSC06102.jpg" alt="" />
+            <img src="./assets/images/ags_assets-DSC05159.jpg" alt="" />
+          </div>
+          <div id="seniorSection_gallery_link">
+            <a href="seniorgallery" class="button_gallery">
+              <span>Full Gallery</span>
+            </a>
+          </div>
         </div>
-        <div class="sectionPreset1_TitleRight">
-          <img src="./assets/images/DSC02236.jpg" alt="" />
+      </section>
+      <section id="seniorSection_pricing">
+        <div>
+          <div id="seniorSection_pricing_text">
+            <div>
+              <h1>Club Package</h1>
+              <h2>$200</h2>
+              <ul>
+                <li>~150 Pictures</li>
+                <li>Best for 1 game or small teams</li>
+              </ul>
+            </div>
+            <div>
+              <h1>Classic Package</h1>
+              <h2>$350</h2>
+              <ul>
+                <li>~300 Pictures</li>
+                <li>Best for bigger teams or multiple games</li>
+              </ul>
+            </div>
+            <div>
+              <h1>Champions Package</h1>
+              <h2>$550</h2>
+              <ul>
+                <li>~500 Pictures</li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li>Best for tournaments</li>
+                <li></li>
+              </ul>
+            </div>
+            <a href="contact" class="button_contact">
+              <span>Contact Me</span>
+            </a>
+            <p>(Prices may vary based on location.)</p>
+          </div>
+          <div id="seniorSection2Image">
+            <!-- <img src="./assets/images/DSC04706.jpg" alt=""> -->
+          </div>
         </div>
       </section>
     </main>
