@@ -498,10 +498,10 @@ nav:hover > a > .hide {
   justify-content: center;
 }
 .sectionPreset_itemTable_flexContainer > a {
-  flex: 1;
-  max-height: 18rem;
-  max-width: 18rem;
-  aspect-ratio: 1/1;
+  flex: 0 0 auto;
+  flex-grow: 0;
+  height: 15rem;
+  width: 15rem;
   overflow: hidden;
   position: relative;
 }
@@ -645,7 +645,9 @@ nav:hover > a > .hide {
   max-height: 100%;
   max-width: 100%;
   text-align: center;
+  overflow: hidden;
 }
+
 #seniorSectionContactButton {
   text-align: center;
   width: 7rem;
@@ -836,9 +838,9 @@ nav:hover > a > .hide {
 /* Gallery */
 #gallery {
   display: block;
-  margin-right: 1rem;
-  margin-left: calc(var(--navCorrection) + 10px);
-  margin-top: 1rem;
+  margin-right: 0;
+  margin-left: var(--navCorrection);
+  margin-top: 0;
   line-height: 0;
   -webkit-column-count: 3;
   -webkit-column-gap: 1rem;
@@ -862,11 +864,21 @@ nav:hover > a > .hide {
 @media (max-width: 768px) {
   #gallery {
     margin-top: 75px;
-    margin-left: 1rem;
+    margin-left: 0;
     -moz-column-count: 2;
     column-count: 2;
   }
 }
+@media (max-width: 480px) {
+  #gallery {
+    margin-top: 75px;
+    margin-left: 0;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+}
+/*Sports Galleries Hub*/
+sportsGalleryies_hub
 
 /* Services */
 #servicesSection {
